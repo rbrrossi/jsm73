@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-4 mb-6">
               <img 
-                src="https://raw.githubusercontent.com/fabiomarques/logos/main/logo6.jpg" 
+                src="/jsm73/img/logo.png" 
                 alt="Logo Dark" 
-                className="w-16 h-16 rounded-full"
+                className="w-16 h-16 rounded-full bg-white p-1"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                 }}

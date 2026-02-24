@@ -29,8 +29,8 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollTo('home')}>
-            <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold">
-              SM
+            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center border border-stone-200 overflow-hidden">
+              <img src="/jsm73/img/logo.png" alt="Logo" className="w-full h-full object-contain p-1" />
             </div>
             <div>
               <h1 className="text-stone-800 text-sm font-bold masonic-title leading-tight">JOSÉ DE SAN MARTIN</h1>

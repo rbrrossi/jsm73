@@ -18,13 +18,13 @@ const Hero: React.FC = () => {
           <div className="relative group">
             <div className="absolute -inset-1 bg-amber-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
             <img 
-              src="https://raw.githubusercontent.com/fabiomarques/logos/main/logo.jpg" 
+              src="/jsm73/img/logo.png" 
               alt="Logo José de San Martin Nº 73" 
               className="relative w-48 h-48 md:w-64 md:h-64 object-contain rounded-full border-4 border-amber-500 shadow-2xl bg-white p-2"
               onError={(e) => {
-                // Fallback UI if external repo path fails
+                // Fallback UI if local path fails
                 e.currentTarget.style.display = 'none';
-                e.currentTarget.parentElement!.innerHTML += '<div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-amber-500 flex items-center justify-center text-stone-100 font-bold text-4xl masonic-title bg-stone-800">SM 73</div>';
+                e.currentTarget.parentElement!.innerHTML += '<div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-amber-500 flex items-center justify-center text-stone-100 font-bold text-4xl masonic-title bg-stone-800">JSM 73</div>';
               }}
             />
           </div>

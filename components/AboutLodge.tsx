@@ -10,7 +10,7 @@ const AboutLodge: React.FC = () => {
             {/* Using logo.jpg as requested */}
             <div className="p-4 bg-stone-100 rounded-3xl border-2 border-amber-200">
               <img 
-                src="https://raw.githubusercontent.com/fabiomarques/logos/main/logo.jpg" 
+                src="/jsm73/img/logo.png" 
                 alt="Brasão da Loja José de San Martin" 
                 className="w-full rounded-2xl shadow-inner bg-white p-4"
                 onError={(e) => {
