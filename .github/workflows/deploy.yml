@@ -1,0 +1,27 @@
+name: Deploy Vite Site
+on:
+  push:
+    branches: [main] # Toda vez que você salvar algo na main, ele faz o build
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install and Build 🏗️
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # O Vite coloca o site pronto nesta pasta
+          branch: gh-pages # O GitHub vai criar esta branch com o site pronto
